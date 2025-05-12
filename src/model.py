@@ -3,7 +3,7 @@ from itertools import product
 from typing import List, Tuple, Dict, Any, Union
 
 
-class BayesianAIControl:
+class BayesianControl:
     """
     Bayesian AI Control model.
     """

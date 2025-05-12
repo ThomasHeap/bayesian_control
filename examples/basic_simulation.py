@@ -12,7 +12,7 @@ os.makedirs(plot_dir, exist_ok=True)
 
 
 from src import (
-    BayesianAIControl,
+    BayesianControl,
     run_single_simulation,
     plot_detection_matrix,
     plot_marginal_probabilities,
@@ -51,7 +51,7 @@ def run_basic_example():
     ]
     
     # Initialize the model
-    bac = BayesianAIControl(n_models, priors, tp_rates, fp_rates)
+    bac = BayesianControl(n_models, priors, tp_rates, fp_rates)
     
     # True malicious status for simulation
     # Let's say model 1 (GPT-4) is actually malicious in this simulation

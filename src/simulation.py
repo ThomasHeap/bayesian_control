@@ -1,12 +1,12 @@
 import numpy as np
 from typing import Dict, List, Tuple, Any
-from .model import BayesianAIControl
+from .model import BayesianControl
 
 
-def run_single_simulation(model: BayesianAIControl, true_status: List[int]) -> Dict[str, Any]:
+def run_single_simulation(model: BayesianControl, true_status: List[int]) -> Dict[str, Any]:
     """
     Parameters:
-        model: The BayesianAIControl model to use
+        model: The BayesianControl model to use
         true_status: The true malicious status of each model
         
     Returns:
