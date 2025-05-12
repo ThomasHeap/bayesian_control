@@ -56,10 +56,8 @@ def run_basic_example():
     # (GPT-4) is actually malicious in this simulation
     true_status = [0, 1, 0]
     
-    # Run a simulation
     results = run_single_simulation(bac, true_status)
     
-    # Print results
     print(f"Simulated detection matrix:")
     print(results['detections'])
     
@@ -70,7 +68,6 @@ def run_basic_example():
     for i, prob in enumerate(results['marginals']):
         print(f"{model_names[i]}: {prob:.4f}")
     
-    # Plot results
     plot_detection_matrix(results['detections'], model_names)
     plt.savefig(os.path.join(plot_dir, "detection_matrix.png"))
     
