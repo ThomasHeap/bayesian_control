@@ -3,11 +3,10 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Add the parent directory to the path so we can import the package
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 plot_dir = 'plots/basic_simulation'
-#make dir if it doesn't exist
 os.makedirs(plot_dir, exist_ok=True)
 
 
@@ -24,7 +23,7 @@ def run_basic_example():
     """Run a basic example simulation."""
     print("Running basic example simulation...")
     
-    # Example with 3 models (similar to the email discussion)
+    
     n_models = 3
     model_names = ["GPT-3.5", "GPT-4", "Claude"]
     
@@ -54,7 +53,7 @@ def run_basic_example():
     bac = BayesianControl(n_models, priors, tp_rates, fp_rates)
     
     # True malicious status for simulation
-    # Let's say model 1 (GPT-4) is actually malicious in this simulation
+    # (GPT-4) is actually malicious in this simulation
     true_status = [0, 1, 0]
     
     # Run a simulation
