@@ -77,7 +77,6 @@ def run_basic_example():
     plot_top_configurations(results['posterior'], n_configs=5, model_names=model_names)
     plt.savefig(os.path.join(plot_dir, "top_configurations.png"))
     
-    print("\nPlots saved to the current directory.")
 
 
 if __name__ == "__main__":
